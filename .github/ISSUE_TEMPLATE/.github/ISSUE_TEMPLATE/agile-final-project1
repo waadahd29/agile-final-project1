@@ -1,0 +1,10 @@
+**As a** user
+**I need** the ability to create a product
+**So that** I can add products to the catalog
+
+### Acceptance Criteria
+
+```gherkin
+Given a product catalog
+When I create a new product
+Then the product should be stored in the catalog

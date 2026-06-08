@@ -1,10 +1,17 @@
-**As a** user
-**I need** the ability to create a product
-**So that** I can add products to the catalog
+As a user
+I need to manage products
+So that I can organize the catalog
 
-### Acceptance Criteria
+Acceptance Criteria:
 
-```gherkin
-Given a product catalog
-When I create a new product
-Then the product should be stored in the catalog
+Given I am logged in as admin
+When I add a new product with valid details
+Then the product should be saved in the catalog
+
+Given I am an admin
+When I delete a product
+Then it should be removed from the catalog
+
+Given I search for a product
+When the product exists
+Then it should be displayed in the results
